@@ -1,0 +1,5 @@
+!# /bin/bash
+
+cd /root/flask_rest/
+pwd
+/usr/local/python3/bin/gunicorn --reload -c gunicorn_deploy.py manager:app

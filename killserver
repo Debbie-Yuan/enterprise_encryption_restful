@@ -1,0 +1,4 @@
+#! /bin/bash
+
+kill -9 'cat /root/flask_rest/gunicorn_log/gunicorn.pid'
+rm /root/flask_rest/gunicorn_log/gunicorn.pid

@@ -1,0 +1,589 @@
+{
+	"info": {
+		"_postman_id": "25e973d5-5b3a-4294-be1d-50da7f54dcdb",
+		"name": "flask-rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "登陆",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "action",
+							"value": "login",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "wangweilin",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "b",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "中国 北京市 海淀区 清华大学",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "steven@qq.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "101",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "ident_data",
+							"value": "root",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "981209",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://debbiee.cn/flask/user",
+					"protocol": "https",
+					"host": [
+						"debbiee",
+						"cn"
+					],
+					"path": [
+						"flask",
+						"user"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "register",
+							"disabled": true
+						},
+						{
+							"key": "ident_data",
+							"value": "wangweilin",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"disabled": true
+						},
+						{
+							"key": "token",
+							"value": "admin6839c85b645b48d7adb485980cd781dc",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "wangweilin",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "b",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "中国 北京市 海淀区 清华大学",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "steven@qq.com",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "101",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "grant_code",
+							"value": "3479",
+							"disabled": true
+						},
+						{
+							"key": "ident_by",
+							"value": "11",
+							"disabled": true
+						},
+						{
+							"key": "ident_data",
+							"value": "root",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "删除用户",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "admin9e1a6c9ac61943daa7e76edc9ac71f84",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "delete",
+							"description": "    USER_LOGIN = 'login'\n    USER_LOGOUT = 'logout'\n    USER_REGISTER = 'register'\n    USER_PATCH = 'patch'\n    USER_GRANT = 'grant'\n    USER_DELETE = 'delete'",
+							"type": "text"
+						},
+						{
+							"key": "ident_by",
+							"value": "11",
+							"description": "    IDENT_NAME = 11\n    IDENT_EMAIL = 12\n    IDENT_PHONE = 13",
+							"type": "text"
+						},
+						{
+							"key": "ident_data",
+							"value": "test7",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://debbiee.cn/flask/user",
+					"protocol": "https",
+					"host": [
+						"debbiee",
+						"cn"
+					],
+					"path": [
+						"flask",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "用户修改",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "action",
+							"value": "patch",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "admindbde2a442e2243ecbd8ca0022d533a18",
+							"type": "text"
+						},
+						{
+							"key": "old_password",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "new_password",
+							"value": "test7",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "test7",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "19923249857",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "地球 中国 甘肃 兰州",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://debbiee.cn/flask/user",
+					"protocol": "https",
+					"host": [
+						"debbiee",
+						"cn"
+					],
+					"path": [
+						"flask",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "考勤签到-超级管理员",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "method",
+							"value": "14",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "att_add",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "all",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://debbiee.cn/flask/user/att",
+					"protocol": "https",
+					"host": [
+						"debbiee",
+						"cn"
+					],
+					"path": [
+						"flask",
+						"user",
+						"att"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "admin008543c4675943f5a22e471e33a9fb16",
+							"disabled": true
+						},
+						{
+							"key": "method",
+							"value": "14",
+							"disabled": true
+						},
+						{
+							"key": "action",
+							"value": "att_add",
+							"disabled": true
+						},
+						{
+							"key": "uid",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查询用户信息",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://debbiee.cn/flask/user?token=adminbf4172372fd54c06b8aad6d7e32777d2&id=2",
+					"protocol": "https",
+					"host": [
+						"debbiee",
+						"cn"
+					],
+					"path": [
+						"flask",
+						"user"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "adminbf4172372fd54c06b8aad6d7e32777d2"
+						},
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "all",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "签到查询",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://debbiee.cn/flask/user/att?token=admina4fc8ed31c304274912eea7be3e364b3&id=2",
+					"protocol": "https",
+					"host": [
+						"debbiee",
+						"cn"
+					],
+					"path": [
+						"flask",
+						"user",
+						"att"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "admina4fc8ed31c304274912eea7be3e364b3"
+						},
+						{
+							"key": "all",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取肖像上传令牌",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://debbiee.cn/flask/user/prt?token=adminc117c93a607e45568fd56e90435daa71&amt=10&action=prt_auth",
+					"protocol": "https",
+					"host": [
+						"debbiee",
+						"cn"
+					],
+					"path": [
+						"flask",
+						"user",
+						"prt"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "adminc117c93a607e45568fd56e90435daa71"
+						},
+						{
+							"key": "amt",
+							"value": "10"
+						},
+						{
+							"key": "action",
+							"value": "prt_auth"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "肖像上传",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "adminc117c93a607e45568fd56e90435daa71",
+							"type": "text"
+						},
+						{
+							"key": "prt_token",
+							"value": "prtcltca44e5771fea42919b6c511540444fd5",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "data",
+							"type": "file",
+							"src": "/Users/debbie/Downloads/data.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://debbiee.cn/flask/user/prt",
+					"protocol": "https",
+					"host": [
+						"debbiee",
+						"cn"
+					],
+					"path": [
+						"flask",
+						"user",
+						"prt"
+					],
+					"query": [
+						{
+							"key": "prt_token",
+							"value": "prtclted85a5adc4384586a664d87499a95743",
+							"disabled": true
+						},
+						{
+							"key": "token",
+							"value": "adminb306b94ca3e347b8a68023e4ddfb6954",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "data",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "用户肖像查询",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://debbiee.cn/flask/user/prt?id=1&limit=&token=adminef46a3bb6be6401c982bf608d7203fda&action=prt_get",
+					"protocol": "https",
+					"host": [
+						"debbiee",
+						"cn"
+					],
+					"path": [
+						"flask",
+						"user",
+						"prt"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": ""
+						},
+						{
+							"key": "token",
+							"value": "adminef46a3bb6be6401c982bf608d7203fda"
+						},
+						{
+							"key": "action",
+							"value": "prt_get",
+							"description": "PRT_AUTH = 'prt_auth'\nPRT_GET = 'prt_get'"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
