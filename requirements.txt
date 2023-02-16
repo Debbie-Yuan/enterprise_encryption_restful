@@ -5,7 +5,7 @@ SQLAlchemy==1.3.17
 gunicorn==20.0.4
 Flask_Caching==1.9.0
 Flask_DebugToolbar==0.11.0
-Werkzeug==1.0.1
+Werkzeug==2.2.3
 alembic==1.4.2
 Flask_RESTful==0.3.8
 Flask==1.1.2
